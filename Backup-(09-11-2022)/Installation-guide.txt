@@ -1,0 +1,41 @@
+1. Created two folders client, server
+2. Inside client - npx create-react-app
+3. Inside server npm init -y
+4. Inside server: npm install body-parser cors express mongoose nodemon
+5. Change the package.json in server folder
+6. In the clieent directory - npm install --legacy-peer-deps
+7. In the client dir - npm install @material-ui/core
+8. In client dir - npm install react-redux
+9. For create, update, delete -> server -> routes, controller and after in client api -> actions ->
+ client reducers -> posts.js -> Components -> Post
+10. To like a post -> server -> routes, controllers. After in client -> api -> actions -> reducers -> posts
+
+/* Sign up */
+
+1. In the client -> actions need to Change
+2. In the server -> index.js then -> routes -> users.js
+3. In the server create user controller and user model in the model folder.
+4. After that create a new folder in the server directory -> middleware.
+5. Inside middleware create a file auth.js
+6. Then change is the routes -> post.js add "auth" for all the routes except getPost.
+/* Backend almost done*/
+
+/* In the client */
+1. first change in the api -> index.js
+
+/* For the post details page */
+1. In the client -> actions -> posts.js need to change
+2. iN client constants -> actionTypes.js add the actionTypes
+3. In the client -> api -> index.js add the api endpoints
+4. In the server -> routes -> post.js add the routes
+5. In the server -> controllers -> posts.js need to change
+6. In the client -> reducers -> post.js import the action type
+
+/* For the comment post */
+1. In the client -> actions -> post -> make the commentPost func
+2. In the client -> api -> index.js add the api endpoints for the comment
+3. In the server -> routes -> post.js add the routes for commentPost
+4. After that in the controller need to make commentPost func
+5. In the server -> models -> postMessage.js add the comments field
+6. After come back to client-> action -> post.js and need to finish the commentPost func
+7. In the client -> reducers -> posts.js add the action
